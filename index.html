@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="a web applicant of photographs that took using an iphone"
+    />
+    <meta name="keywords" content="HTML, CSS, Javascript" />
+    <meta name="author" content="Resyana Cahyanita" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="images/TL.png" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+    />
+    <title>Through.Lens | RC</title>
+  </head>
+  <body>
+    <nav class="navbar">
+      <img src="images/TL.png" alt="Logo Through Lens" width="70px" />
+      <ul class="nav-menu">
+        <li class="nav-item">
+          <a href="index.html" class="nav-link">Home</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link">About</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link">Contact</a>
+        </li>
+      </ul>
+      <div class="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </nav>
+
+    <header class="full-screen" id="header">
+      <h1 class="header-text">Through.Lens Photographs</h1>
+    </header>
+    <main>
+      <h3>
+        “The best thing about a picture is that it never changes, even when the
+        people in it do.” — Andy Warhol
+      </h3>
+
+      <section id="my-photos">
+        <div class="grid-container">
+          <div id="img-1">
+            <img
+              src="images/img1.jpg"
+              alt="The Big Glass of sculpture at National Museum"
+            />
+          </div>
+          <div id="img-2">
+            <img
+              src="images/img2.jpg"
+              alt="A guy wearing javanese traditonal beskap"
+            />
+          </div>
+          <div id="img-3">
+            <img
+              src="images/img3.jpg"
+              alt="A girl looking at photographs in a cafe"
+            />
+          </div>
+          <div id="img-4">
+            <img
+              src="images/img4.jpg"
+              alt="A girl looking at the sunrise in the summit of mount batur"
+            />
+          </div>
+        </div>
+        <h2>M O M E N T S</h2>
+      </section>
+      <section id="about">
+        <div class="container">
+          <div class="content-about">
+            <div class="title">
+              <h2>Hi, I'm Resya!</h2>
+            </div>
+            <div class="content">
+              <p>
+                I tremendously enjoy taking picture using my mobile phone, while
+                preserving the memories to hold on to for a lifetime.
+              </p>
+              <ul class>
+                <li>Lifestyle Sessions</li>
+                <li>Nature Sessions</li>
+                <li>Customization Session</li>
+              </ul>
+              <div class="button">
+                <a href="">More About Me</a>
+              </div>
+              <div class="social">
+                <a href="https://www.instagram.com/snap__sya/"
+                  ><i class="fab fa-instagram"></i
+                ></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="image-about">
+          <img src="images/about.jpg" alt="The Photographer Photo" />
+        </div>
+      </section>
+      <section id="section-video">
+        <div class="flex-container">
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/8Tl1RL8MRCA"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+        </div>
+        <h2>Cinematic Video Using an iPhone</h2>
+      </section>
+      <section id="form-section">
+        <h2>Book Your Session</h2>
+        <form action="#">
+          <fieldset>
+            <legend>Client information:</legend>
+            <div>
+              <label for="fullName">Full Name* :</label>
+              <input id="fullName" type="text" required />
+            </div>
+
+            <div>
+              <label for="email">Email* :</label>
+              <input id="email" type="email" required />
+            </div>
+
+            <div>
+              <p>Are you living in Indonesia?</p>
+              <input
+                type="radio"
+                id="yes"
+                name="isIndonesia"
+                value="Indonesian"
+              />
+              <label for="yes">Yes</label>
+              <input
+                type="radio"
+                id="no"
+                name="isIndonesia"
+                value="Foreigner"
+              />
+              <label for="no">No</label>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>Additional information:</legend>
+            <div>
+              <p>How do you know this website?</p>
+              <input
+                id="social media"
+                type="checkbox"
+                name="info"
+                value="social media"
+              />
+              <label for="Social Media">Social Media</label>
+              <input id="google" type="checkbox" name="info" value="google" />
+              <label for="google">Google</label>
+              <input id="friends" type="checkbox" name="info" value="friends" />
+              <label for="friends">Friends</label>
+            </div>
+            <div>
+              <p>Explain your needs and wants!</p>
+              <textarea rows="3"></textarea>
+            </div>
+            <div>
+              <p>Reference Photo:</p>
+              <input
+                type="file"
+                id="photo"
+                name="referencePhoto"
+                required
+                accept="image/png, image/jpeg"
+              />
+            </div>
+          </fieldset>
+          <button type="submit">Submit</button>
+        </form>
+      </section>
+    </main>
+  </body>
+  <footer class="footer">
+    <p class="copyright">&copy 2023 Through.Lens</p>
+  </footer>
+  <script src="script.js"></script>
+</html>
